@@ -21,11 +21,10 @@
                    <div class="col-lg-6 col-md-6 d-none d-lg-block">
                        <div class="header-social text-right">
                       <span>
-                          <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
-                          <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
-                          <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>                               
-                         </span>                    
-                         <!--  /social media icon redux -->                               
+                          <a routerLink="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                          <a routerLink="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                          <a routerLink="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>                               
+                         </span>                                                
                   </div>
                   </div>
                    
@@ -38,7 +37,7 @@
                   <div class="row align-items-center">
                       <div class="col-xl-2 col-lg-2">
                           <div class="logo">
-                              <a href="index.html"><img src="assets/img/logo/logo.png" alt="logo"></a>
+                              <a routerLink="index.html"><img src="assets/img/logo/logo.png" alt="logo"></a>
                           </div>
                       </div>
                      <div class="col-xl-7 col-lg-7">
@@ -47,39 +46,35 @@
                               <nav id="mobile-menu">
                                   <ul>
                                       <li class="has-sub">
-                  <a href="index.html">Home</a>
-                  <!-- <ul>
-                                              <li><a href="index.html">Home Page 01</a></li>
-                                              <li><a href="index-2.html">Home Page 02</a></li>
+                  <a routerLink="/home">Home</a>
 
-                  </ul> -->
                 </li>
-                                      <li><a href="about.html">About Us</a></li>
-                                      <li class="has-sub"><a href="#">Pages</a>
+                                      <li><a routerLink="/aboutUs" >About Us</a></li>
+                                      <li class="has-sub"><a routerLink="/projects">Pages</a>
                   <ul>
-                                              <li><a href="projects.html">Project</a></li>
-                                              <li><a href="projects-detail.html">Project Details</a></li>
+                                              <li><a routerLink="/projects">Project</a></li>
+                                              <li><a routerLink="/projectsDetail">Project Details</a></li>
 
-                                              <li><a href="pricing.html">Pricing</a></li>
-                                              <li><a href="team.html">Team</a></li>
-                                              <li><a href="faq.html">Faq</a></li>
-                                              <li><a href="shop.html">Shop</a></li>
-                                              <li><a href="shop-details.html">Shop Details</a>
+                                              <li><a routerLink="/pricing">Pricing</a></li>
+                                              <li><a routerLink="/team">Team</a></li>
+                                              <li><a routerLink="/faq">Faq</a></li>
+                                              <li><a routerLink="/shop">Shop</a></li>
+                                              <li><a routerLink="/shopDetail">Shop Details</a>
                   </li></ul>
                 </li>
                                       <li class="has-sub"> 
-                                        <a href="services.html">Services</a>
+                                        <a routerLink="/services">Services</a>
                                           <ul>
-                                               <li><a href="services.html">Services</a></li>
-                                              <li><a href="services-detail.html">Services Details</a></li>
+                                               <li><a routerLink="/services">Services</a></li>
+                                              <li><a routerLink="/servicesDetail">Services Details</a></li>
                   </ul>
                                       </li>
                                      
                 <li class="has-sub"> 
-                                          <a href="blog.html">Blog</a>
+                                          <a routerLink="blog.html">Blog</a>
                                           <ul>
-                                              <li><a href="blog.html">Blog</a></li>
-                                              <li><a href="blog-details.html">Blog Details</a></li>
+                                              <li><a routerLink="blog.html">Blog</a></li>
+                                              <li><a routerLink="blog-details.html">Blog Details</a></li>
                   </ul>
                                       </li>
                                                                   
@@ -90,10 +85,10 @@
                           </div>
                       </div>   
                        <div class="col-xl-1 col-lg-1 text-center d-none d-lg-block mt-15 mb-15">
-                          <a href="contact.html" class="menu-tigger"><i class="fal fa-search"></i></a>
+                          <a routerLink="/search" class="menu-tigger"><i class="fal fa-search"></i></a>
                       </div>
                       <div class="col-xl-2 col-lg-2 text-right d-none d-lg-block mt-15 mb-15">
-                          <a href="contact.html" class="btn ss-btn">Get A Quote</a>
+                          <a routerLink="/contact" class="btn ss-btn">Get A Quote</a>
                       </div>
                     
                       

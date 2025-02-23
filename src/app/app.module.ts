@@ -19,6 +19,17 @@ import { CalltocontactComponent } from './layout/calltocontact/calltocontact.com
 import { BlogComponent } from './layout/blog/blog.component';
 import { BrandComponent } from './layout/brand/brand.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { AboutUsComponent } from './layout/aboutUs/aboutUs.component';
+import { ProjectComponent } from './layout/projects/project.component';
+import { ProjectsDetailComponent } from './layout/projectsDetail/projectsDetail.component';
+import { PricingComponent } from './layout/pricing/pricing.component';
+import { FaqComponent } from './layout/faq/faq.component';
+import { ShopComponent } from './layout/shop/shop.component';
+import { ShopDetailComponent } from './layout/shopDetail/shopDetail.component';
+import { ServicesComponent } from './layout/services/services.component';
+import { ServicesDetailComponent } from './layout/servicesDetail/servicesDetail.component';
+import { SearchComponent } from './layout/search/search.component';
+import { ContactComponent } from './layout/contact/contact.component';
 
 @NgModule({
 imports: [BrowserModule,AppRouter,SlickCarouselModule],
@@ -39,7 +50,18 @@ imports: [BrowserModule,AppRouter,SlickCarouselModule],
       TestinomialComponent,
       CalltocontactComponent,
       BlogComponent,
-      BrandComponent
+      BrandComponent,
+      AboutUsComponent,
+      ProjectComponent,
+      ProjectsDetailComponent,
+      PricingComponent,
+      FaqComponent,
+      ShopComponent,
+      ShopDetailComponent,
+      ServicesComponent,
+      ServicesDetailComponent,
+      SearchComponent,
+      ContactComponent
     ], 
   bootstrap: [AppComponent]
 })

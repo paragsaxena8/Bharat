@@ -1,0 +1,35 @@
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .single-slider.animate h5 {
+    animation: fadeInDown 0.8s ease-in-out;
+  }
+  
+  .single-slider.animate h2 {
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  .single-slider.animate p {
+    animation: fadeInUp 1.2s ease-in-out;
+  }
+  
+  

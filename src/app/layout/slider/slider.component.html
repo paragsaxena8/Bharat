@@ -1,4 +1,50 @@
-<section id="home" class="slider-area slider-four fix p-relative">
+<!-- <ngx-slick-carousel class="slider-active" [config]="slideConfig">
+    <div ngxSlickItem *ngFor="let slide of slides" class="single-slider slider-bg d-flex align-items-center"
+      [ngStyle]="{'background': 'url(' + slide.image + ') no-repeat', 'background-size': 'cover', 'background-position': 'center top'}">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-12 col-md-12">
+            <div class="slider-content s-slider-content text2 text-center">
+              <h5>{{ slide.title }}</h5>
+              <h2>{{ slide.subtitle }}</h2>
+              <p>{{ slide.description }}</p>
+              <div class="slider-btn mt-30">
+                <a routerLink="services.html" class="btn ss-btn mr-15">Read More</a>
+                <a routerLink="contact.html" class="btn ss-btn active">Contact Us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ngx-slick-carousel> -->
+
+
+  <ngx-slick-carousel #slickModal="slick-carousel" class="slider-active" [config]="slideConfig" (afterChange)="afterChange($event)">
+    <div ngxSlickItem *ngFor="let slide of slides; let i = index" class="single-slider slider-bg d-flex align-items-center"
+      [ngClass]="{ 'animate': i === 0 }"
+      [ngStyle]="{'background': 'url(' + slide.image + ') no-repeat', 'background-size': 'cover', 'background-position': 'center top'}">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-12 col-md-12">
+            <div class="slider-content s-slider-content text2 text-center">
+              <h5 data-animation="fadeInDown" data-delay=".4s">{{ slide.title }}</h5>
+              <h2 data-animation="fadeInUp" data-delay=".4s">{{ slide.subtitle }}</h2>
+              <p data-animation="fadeInUp" data-delay=".6s">{{ slide.description }}</p>
+              <div class="slider-btn mt-30">
+                <a routerLink="services" class="btn ss-btn mr-15">Read More</a>
+                <a routerLink="contact" class="btn ss-btn active">Contact Us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ngx-slick-carousel>
+  
+  
+
+<section id="home" class="slider-area slider-four fix p-relative" hidden>
   <div class="slider-active">
     <div
       class="single-slider slider-bg slider-bg2 d-flex align-items-center"
@@ -24,9 +70,8 @@
               </p>
 
               <div class="slider-btn mt-30">
-                <a href="services.html" class="btn ss-btn mr-15">Read More</a>
-                <a
-                  href="contact.html"
+                <a routerLink="services" class="btn ss-btn mr-15">Read More</a>
+                <a routerLink="contact"
                   class="btn ss-btn active"
                   data-animation="fadeInRight"
                   data-delay=".8s"
@@ -63,9 +108,8 @@
               </p>
 
               <div class="slider-btn mt-30">
-                <a href="services.html" class="btn ss-btn mr-15">Read More</a>
-                <a
-                  href="contact.html"
+                <a routerLink="/services" class="btn ss-btn mr-15">Read More</a>
+                <a routerLink="/contact"
                   class="btn ss-btn active"
                   data-animation="fadeInRight"
                   data-delay=".8s"

@@ -983,10 +983,11 @@ border: 2px solid #2f71b5;
 }
 .slider-content h2 {
 	font-size: 72px;
-	color: #010f2e;
+	color: #fff;
 	letter-spacing: 1.0px;
 	line-height: 1.2;
 	margin-bottom: 40px;
+    font-family: 'rubik', sans-serif;
 }
 .slider-content h2 span {
 	color: #2f71b5;
@@ -9303,3 +9304,6 @@ margin: auto;
     color: #fff;
     font-size: 24px;
 }
+
+
+  
